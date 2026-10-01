@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kaanch Kraft | Artistry in Every Glass Creation</title>
+
+    <meta
+        name="description"
+        content="Discover handcrafted glass creations by Kaanch Kraft — artistic, elegant and made to elevate your space."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="brand">
+                <span class="brand-main">KAANCH</span>
+                <span class="brand-sub">KRAFT</span>
+            </a>
+
+            <nav class="main-nav">
+
+                <a href="#home" class="active">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a
+                    href="https://instagram.com/kaanch.kraft"
+                    target="_blank"
+                    class="social-link"
+                    aria-label="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <button class="cart-button" onclick="openCart()">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Cart</span>
+                    <b id="cart-count">0</b>
+                </button>
+
+            </div>
+
+            <button class="menu-button" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <p class="eyebrow">HANDCRAFTED GLASS ART</p>
+
+                <h1>
+                    Artistry in<br>
+                    <em>Every Glass Creation.</em>
+                </h1>
+
+                <p class="hero-text">
+                    Thoughtfully handcrafted pieces designed to bring
+                    elegance, warmth and character into your space.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#shop" class="btn btn-primary">
+                        Explore Collection
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#custom-order" class="btn btn-outline">
+                        Custom Order
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+
+                <span>HANDCRAFTED</span>
+                <span>TIMELESS</span>
+                <span>ARTISTIC</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRO ================= -->
+
+        <section class="intro-section">
+
+            <div class="container intro-grid">
+
+                <div>
+                    <p class="section-label">THE KAANCH KRAFT PHILOSOPHY</p>
+                </div>
+
+                <div class="intro-copy">
+
+                    <h2>
+                        Where glass becomes
+                        <em>art.</em>
+                    </h2>
+
+                    <p>
+                        At Kaanch Kraft, every creation is designed with
+                        an eye for beauty, detail and individuality.
+                        We believe that handcrafted glass is more than
+                        décor — it is a piece of artistry made to be
+                        experienced.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED COLLECTION ================= -->
+
+        <section class="shop-section" id="shop">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-label">CURATED FOR YOU</p>
+
+                        <h2>
+                            Featured <em>Collection</em>
+                        </h2>
+                    </div>
+
+                    <a href="#shop" class="text-link">
+                        View All Products
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="product-grid" id="product-list">
+
+                    <!-- Products will be loaded by JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY KAANCH KRAFT ================= -->
+
+        <section class="features-section">
+
+            <div class="container">
+
+                <div class="center-heading">
+
+                    <p class="section-label">WHY KAANCH KRAFT</p>
+
+                    <h2>
+                        Made with intention.
+                        <em>Made to last.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-hand-sparkles"></i>
+                        </div>
+
+                        <h3>Handcrafted</h3>
+
+                        <p>
+                            Every piece is thoughtfully crafted with
+                            attention to detail.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+
+                        <h3>Unique Design</h3>
+
+                        <p>
+                            Artistic creations designed to make your
+                            space feel truly special.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+
+                        <h3>Made for Gifting</h3>
+
+                        <p>
+                            Beautiful pieces for celebrations,
+                            occasions and thoughtful gifting.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <h3>Made with Care</h3>
+
+                        <p>
+                            From design to finishing, every detail
+                            receives careful attention.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+
+                    <img
+                        src="images/product-1.jpeg"
+                        alt="Kaanch Kraft handcrafted glass creation"
+                    >
+
+                    <div class="image-badge">
+                        <span>KAANCH</span>
+                        <small>KRAFT</small>
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <p class="section-label">OUR STORY</p>
+
+                    <h2>
+                        Crafting beauty,
+                        <em>one piece at a time.</em>
+                    </h2>
+
+                    <p>
+                        Kaanch Kraft brings together creativity,
+                        craftsmanship and a love for beautiful spaces.
+                        Our creations are made for people who appreciate
+                        details that feel personal and timeless.
+                    </p>
+
+                    <p>
+                        Whether it is a statement piece for your home
+                        or a thoughtful gift for someone special,
+                        each creation is made to leave an impression.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Discover Our Story
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALLERY ================= -->
+
+        <section class="gallery-section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-label">A GLIMPSE OF OUR WORLD</p>
+
+                        <h2>
+                            Crafted for
+                            <em>beautiful spaces.</em>
+                        </h2>
+                    </div>
+
+                    <a
+                        href="https://instagram.com/kaanch.kraft"
+                        target="_blank"
+                        class="text-link"
+                    >
+                        Follow Instagram
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item gallery-large">
+                        <img src="images/product-2.jpeg" alt="Kaanch Kraft glass artwork">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/product-3.jpeg" alt="Kaanch Kraft glass artwork">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/product-4.jpeg" alt="Kaanch Kraft glass artwork">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/product-5.jpeg" alt="Kaanch Kraft glass artwork">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/product-6.jpeg" alt="Kaanch Kraft glass artwork">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= REVIEWS ================= -->
+
+        <section class="reviews-section">
+
+            <div class="container">
+
+                <div class="center-heading">
+
+                    <p class="section-label">CUSTOMER LOVE</p>
+
+                    <h2>
+                        Pieces that become
+                        <em>memories.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="reviews-grid">
+
+                    <article class="review-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            “Beautiful craftsmanship and such an elegant
+                            piece. It completely changed the feel of my space.”
+                        </p>
+
+                        <span>Verified Customer</span>
+
+                    </article>
+
+
+                    <article class="review-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            “The detailing is beautiful. It feels much
+                            more special than a regular décor piece.”
+                        </p>
+
+                        <span>Verified Customer</span>
+
+                    </article>
+
+
+                    <article class="review-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            “A beautiful gift and very thoughtfully made.
+                            The finish and presentation were lovely.”
+                        </p>
+
+                        <span>Verified Customer</span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CUSTOM ORDER ================= -->
+
+        <section class="custom-section" id="custom-order">
+
+            <div class="container custom-content">
+
+                <p class="section-label">CREATE SOMETHING PERSONAL</p>
+
+                <h2>
+                    Have something
+                    <em>special in mind?</em>
+                </h2>
+
+                <p>
+                    Tell us what you are imagining and explore the
+                    possibility of creating a piece made especially for you.
+                </p>
+
+                <a href="#contact" class="btn btn-light">
+                    Start a Custom Order
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact-section" id="contact">
+
+            <div class="container contact-grid">
+
+                <div>
+
+                    <p class="section-label">GET IN TOUCH</p>
+
+                    <h2>
+                        Let's create
+                        <em>something beautiful.</em>
+                    </h2>
+
+                    <p>
+                        Have a question, want to place an order,
+                        or looking for a custom creation?
+                        We would love to hear from you.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-actions">
+
+                    <a
+                        href="https://wa.me/917252934932"
+                        target="_blank"
+                        class="contact-button"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        <span>
+                            <small>ORDER / ENQUIRE</small>
+                            WhatsApp
+                        </span>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://instagram.com/kaanch.kraft"
+                        target="_blank"
+                        class="contact-button"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+
+                        <span>
+                            <small>FOLLOW OUR WORK</small>
+                            Instagram
+                        </span>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="brand">
+                        <span class="brand-main">KAANCH</span>
+                        <span class="brand-sub">KRAFT</span>
+                    </a>
+
+                    <p>
+                        Artistry in Every Glass Creation.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div>
+
+                        <h4>Explore</h4>
+
+                        <a href="#home">Home</a>
+                        <a href="#shop">Shop</a>
+                        <a href="#about">About</a>
+                        <a href="#gallery">Gallery</a>
+
+                    </div>
+
+
+                    <div>
+
+                        <h4>Connect</h4>
+
+                        <a href="#contact">Contact</a>
+                        <a href="#custom-order">Custom Orders</a>
+
+                        <a
+                            href="https://instagram.com/kaanch.kraft"
+                            target="_blank"
+                        >
+                            Instagram
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Kaanch Kraft. All rights reserved.
+                </span>
+
+                <span>
+                    Handcrafted with care.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART DRAWER ================= -->
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <aside class="cart-drawer" id="cart-drawer">
+
+        <div class="cart-header">
+
+            <div>
+                <p class="section-label">YOUR BAG</p>
+                <h3>Shopping Cart</h3>
+            </div>
+
+            <button onclick="closeCart()" aria-label="Close cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cart-items">
+
+            <div class="empty-cart">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <h4>Your cart is empty</h4>
+
+                <p>
+                    Discover something beautiful for your space.
+                </p>
+
+                <button onclick="closeCart()" class="btn btn-primary">
+                    Explore Collection
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Subtotal</span>
+                <strong id="cart-total">₹0</strong>
+
+            </div>
+
+            <button onclick="proceedToCheckout()">
+                Proceed to Checkout
+                
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <script src="script.js"></script>
+    <!-- PRODUCT DETAILS MODAL -->
+<div id="productModal" class="product-modal">
+  <div class="product-modal-content">
+
+    <button class="product-modal-close" onclick="closeProductModal()">×</button>
+
+    <div class="product-detail-image">
+      <img id="modalProductImage" src="" alt="Product">
+    </div>
+
+    <div class="product-detail-info">
+      <p class="product-detail-label">KAANCH KRAFT</p>
+
+      <h2 id="modalProductName">Glass Creation</h2>
+
+      <div class="product-rating">
+        ★★★★★ <span>5.0</span>
+      </div>
+
+      <div class="product-detail-price" id="modalProductPrice">
+        ₹2,100
+      </div>
+
+      <p class="product-detail-description">
+        A thoughtfully handcrafted glass creation designed to bring
+        elegance, artistic character and a premium touch to your space.
+      </p>
+
+      <div class="quantity-box">
+        <span>Quantity</span>
+
+        <div class="quantity-controls">
+          <button onclick="changeModalQuantity(-1)">−</button>
+          <span id="modalQuantity">1</span>
+          <button onclick="changeModalQuantity(1)">+</button>
+        </div>
+      </div>
+
+      <div class="product-detail-buttons">
+        <button class="btn-primary" onclick="addModalProductToCart()">
+          Add to Cart
+        </button>
+
+        <button class="btn-secondary" onclick="buyNow()">
+          Buy Now
+        </button>
+      </div>
+
+      <button class="whatsapp-order-btn" onclick="orderModalOnWhatsApp()">
+        Order on WhatsApp
+      </button>
+
+    </div>
+
+  </div>
+</div>
+<!-- ================= CHECKOUT SECTION ================= -->
+
+<section id="checkoutSection" class="checkout-section">
+
+    <div class="checkout-container">
+
+        <div class="checkout-header">
+            <p>KAANCH KRAFT</p>
+            <h2>Complete Your Order</h2>
+            <span>Enter your details to continue with your purchase.</span>
+        </div>
+
+        <div class="checkout-layout">
+
+            <!-- CUSTOMER DETAILS -->
+            <div class="checkout-form-box">
+
+                <h3>Customer Details</h3>
+
+                <form id="checkoutForm">
+
+                    <div class="checkout-field">
+                        <label>Full Name</label>
+                        <input
+                            type="text"
+                            id="customerName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="checkout-row">
+
+                        <div class="checkout-field">
+                            <label>Mobile Number</label>
+                            <input
+                                type="tel"
+                                id="customerMobile"
+                                placeholder="10-digit mobile number"
+                                maxlength="10"
+                                required
+                            >
+                        </div>
+
+                        <div class="checkout-field">
+                            <label>Email</label>
+                            <input
+                                type="email"
+                                id="customerEmail"
+                                placeholder="Enter your email"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Address</label>
+                        <textarea
+                            id="customerAddress"
+                            placeholder="House no., street, area"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="checkout-row">
+
+                        <div class="checkout-field">
+                            <label>City</label>
+                            <input
+                                type="text"
+                                id="customerCity"
+                                placeholder="City"
+                                required
+                            >
+                        </div>
+
+                        <div class="checkout-field">
+                            <label>State</label>
+                            <input
+                                type="text"
+                                id="customerState"
+                                placeholder="State"
+                                required
+                            >
+                        </div>
+
+                        <div class="checkout-field">
+                            <label>PIN Code</label>
+                            <input
+                                type="text"
+                                id="customerPin"
+                                placeholder="PIN"
+                                maxlength="6"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <button type="button" class="checkout-payment-btn" onclick="goToPayment()">
+                        Proceed to Payment
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- ORDER SUMMARY -->
+            <div class="checkout-summary">
+
+                <h3>Order Summary</h3>
+
+                <div id="checkoutItems"></div>
+
+                <div class="checkout-total-row">
+                    <span>Subtotal</span>
+                    <strong id="checkoutSubtotal">₹0</strong>
+                </div>
+
+                <div class="checkout-total-row">
+                    <span>Delivery</span>
+                    <strong>Calculated at checkout</strong>
+                </div>
+
+                <div class="checkout-grand-total">
+                    <span>Total</span>
+                    <strong id="checkoutTotal">₹0</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= PAYMENT SECTION ================= -->
+
+<section id="paymentSection" class="payment-section">
+
+    <div class="payment-container">
+
+        <div class="payment-header">
+            <p>KAANCH KRAFT</p>
+            <h2>Choose Payment Method</h2>
+            <span>Securely complete your order.</span>
+        </div>
+
+        <div class="payment-box">
+
+            <div class="payment-order-total">
+                <span>Order Total</span>
+                <strong id="paymentTotal">₹0</strong>
+            </div>
+
+            <div class="payment-methods">
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="online" checked>
+                    <div>
+                        <strong>Online Payment</strong>
+                        <span>UPI, Card, Net Banking & available options</span>
+                    </div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="offline">
+                    <div>
+                        <strong>Offline Payment</strong>
+                        <span>Payment instructions will be provided after order placement</span>
+                    </div>
+                </label>
+
+            </div>
+
+           <button
+    type="button"
+    class="confirm-payment-btn"
+    onclick="processPayment()"
+>
+    Continue to Payment
+</button>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="orderSuccessSection" class="order-success-section" style="display: none;">
+
+    <div class="order-success-card">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <p class="success-brand">KAANCH KRAFT</p>
+
+        <h2>Order Placed Successfully</h2>
+
+        <p class="success-message">
+            Thank you for shopping with Kaanch Kraft.
+            Your order has been successfully placed.
+        </p>
+
+        <div class="success-order-box">
+            <span>Order ID</span>
+            <strong id="successOrderId">KK-000000</strong>
+        </div>
+
+        <p class="success-note">
+            We will contact you regarding your order and payment details.
+        </p>
+
+        <button
+            type="button"
+            class="success-home-btn"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+        >
+            Continue Shopping
+        </button>
+
+        <p class="success-review-text">
+            We'd love to hear about your experience after receiving your order.
+        </p>
+
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+
+# Customer order data
+backend/orders.xlsx
+
+# Environment / secret files
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

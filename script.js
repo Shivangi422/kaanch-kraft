@@ -8,14 +8,14 @@ const products = [
     {
         id: 1,
         name: "Glass Creation 01",
-        price: 5000,
+        price: 1500,
         image: "images/product-1.jpeg",
         description: "Handcrafted glass creation."
     },
     {
         id: 2,
         name: "Glass Creation 02",
-        price: 2100,
+        price: 1400,
         image: "images/product-2.jpeg",
         description: "Elegant handcrafted glass artwork."
     },
@@ -36,140 +36,144 @@ const products = [
     {
         id: 5,
         name: "Glass Creation 05",
-        price: 2100,
+        price: 1500,
         image: "images/product-5.jpeg",
         description: "Beautiful handcrafted décor."
     },
     {
         id: 6,
         name: "Glass Creation 06",
-        price: 2100,
+        price: 1500,
         image: "images/product-6.jpeg",
         description: "Elegant glass artistry."
     },
     {
         id: 7,
         name: "Glass Creation 07",
-        price: 2100,
+        price: 1400,
         image: "images/product-7.jpeg",
         description: "Handcrafted statement piece."
     },
     {
         id: 8,
         name: "Glass Creation 08",
-        price: 2100,
+        price: 2500,
         image: "images/product-8.jpeg",
         description: "Artistic décor for beautiful spaces."
     },
     {
         id: 9,
         name: "Glass Creation 09",
-        price: 2100,
+        price: 5500,
         image: "images/product-9.jpeg",
         description: "Thoughtfully crafted glass artwork."
     },
     {
         id: 10,
         name: "Glass Creation 10",
-        price: 2100,
+        price: 3000,
         image: "images/product-10.jpeg",
         description: "Premium handcrafted creation."
     },
     {
         id: 11,
         name: "Glass Creation 11",
-        price: 2100,
+        price: 2600,
         image: "images/product-11.jpeg",
         description: "Elegant artistic glass piece."
     },
     {
         id: 12,
         name: "Glass Creation 12",
-        price: 2100,
+        price: 10000,
         image: "images/product-12.jpeg",
         description: "Handcrafted glass décor."
     },
     {
         id: 13,
         name: "Glass Creation 13",
-        price: 2100,
+        price: 26000,
         image: "images/product-13.jpeg",
         description: "Beautifully designed glass artwork."
     },
     {
         id: 14,
         name: "Glass Creation 14",
-        price: 2100,
+        price: 5000,
         image: "images/product-14.jpeg",
         description: "Unique handcrafted creation."
     },
     {
         id: 15,
         name: "Glass Creation 15",
-        price: 2100,
+        price: 5000,
         image: "images/product-15.jpeg",
         description: "Premium artistic décor."
     },
     {
         id: 16,
         name: "Glass Creation 16",
-        price: 2100,
+        price: 8000,
         image: "images/product-16.jpeg",
         description: "Crafted with attention to detail."
     },
     {
         id: 17,
         name: "Glass Creation 17",
-        price: 2100,
+        price: 8000,
         image: "images/product-17.jpeg",
         description: "Elegant handmade glass artwork."
     },
     {
         id: 18,
         name: "Glass Creation 18",
-        price: 2100,
+        price: 2000,
         image: "images/product-18.jpeg",
         description: "Artistic statement décor."
     },
     {
         id: 19,
         name: "Glass Creation 19",
-        price: 2100,
+        price: 2000,
         image: "images/product-19.jpeg",
         description: "Handcrafted premium creation."
     },
     {
         id: 20,
         name: "Glass Creation 20",
-        price: 2100,
+        price: 2000,
         image: "images/product-20.jpeg",
         description: "Beautiful glass artistry."
     },
     {
         id: 21,
         name: "Glass Creation 21",
-        price: 2100,
+        price: 4500,
         image: "images/product-21.jpeg",
         description: "Thoughtfully designed glass piece."
     },
     {
         id: 22,
         name: "Glass Creation 22",
-        price: 2100,
+        price: 8500,
         image: "images/product-22.png",
         description: "Elegant handcrafted artwork."
     },
     {
         id: 23,
         name: "Glass Creation 23",
-        price: 2100,
+        price: 6400,
         image: "images/product-23.png",
         description: "Premium glass décor."
     },
     {
         id: 24,
         name: "Glass Creation 24",
-        price: 2100,
+        price: 8500
+        
+        
+        
+        ,
         image: "images/product-24.png",
         description: "Unique artistic glass creation."
     }
@@ -1032,7 +1036,7 @@ async function saveOrderToExcel() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/orders",
+            "/api/orders",
             {
                 method: "POST",
 
@@ -1177,7 +1181,7 @@ async function saveOfflineOrder() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/orders",
+           "/api/orders",
             {
                 method: "POST",
 
